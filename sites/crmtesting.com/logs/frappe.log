@@ -1,0 +1,6 @@
+2023-06-26 19:31:48,818 ERROR frappe New Exception collected with id: 2023-06-26 19:31:48.812802-127.0.0.1-4f3
+Site: crmtesting.com
+Form Dict: {'user': 'demouser@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2023-06-26 19:34:37,898 ERROR frappe New Exception collected with id: 2023-06-26 19:34:37.890784-127.0.0.1-353
+Site: crmtesting.com
+Form Dict: {'cmd': 'frappe.core.doctype.user.user.reset_password', 'user': 'demouser@gmail.com'}

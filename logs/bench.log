@@ -1,0 +1,78 @@
+2023-06-26 12:04:45,455 DEBUG cd crm && python3 -m venv env
+2023-06-26 12:04:47,552 DEBUG cd crm && /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/env/bin/python -m pip install --quiet --upgrade pip
+2023-06-26 12:04:49,248 DEBUG cd crm && /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/env/bin/python -m pip install --quiet wheel
+2023-06-26 12:04:49,973 LOG Getting frappe
+2023-06-26 12:04:49,973 DEBUG cd crm/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2023-06-26 12:04:56,927 LOG Installing frappe
+2023-06-26 12:04:56,927 DEBUG cd /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm && /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/env/bin/python -m pip install --quiet --upgrade -e /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe 
+2023-06-26 12:05:25,106 DEBUG cd /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe && yarn install
+2023-06-26 12:05:51,783 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-06-26 12:05:51,784 DEBUG cd crm && bench build
+2023-06-26 12:05:51,931 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench build
+2023-06-26 12:06:10,323 LOG setting up backups
+2023-06-26 12:06:14,133 LOG backups were set up
+2023-06-26 12:06:14,134 INFO Bench crm initialized
+2023-06-26 12:07:45,007 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench new-site crmtest.com
+2023-06-26 12:08:15,849 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench new-site crmtest.com
+2023-06-26 12:08:27,308 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench new-site crmtesting.com
+2023-06-26 12:10:02,925 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench get-app erpnext
+2023-06-26 12:10:03,359 LOG Getting erpnext
+2023-06-26 12:10:03,359 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2023-06-26 12:10:10,581 LOG Installing erpnext
+2023-06-26 12:10:10,840 DEBUG cd /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm && /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/env/bin/python -m pip install --quiet --upgrade -e /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/erpnext 
+2023-06-26 12:10:17,363 DEBUG cd /Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/erpnext && yarn install
+2023-06-26 12:10:17,662 DEBUG bench build --app erpnext
+2023-06-26 12:10:17,736 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench build --app erpnext
+2023-06-26 12:10:22,751 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-06-26 12:10:51,420 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench --site crmtesting.com install-app erpnext
+2023-06-26 12:13:30,320 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 12:13:30,776 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 12:13:30,777 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-26 12:13:30,798 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 12:13:30,798 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 12:14:11,949 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench use crmtesting.com
+2023-06-26 12:14:14,823 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 12:14:15,166 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 12:14:15,169 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 12:14:15,185 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-26 12:14:15,214 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 12:32:14,558 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 12:32:14,952 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 12:32:14,959 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-26 12:32:14,968 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 12:32:14,977 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 14:13:56,721 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 14:13:57,137 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 14:13:57,153 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 14:13:57,160 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-26 14:13:57,162 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 14:14:09,563 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 14:14:09,854 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 14:14:09,875 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 14:14:09,876 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 14:14:09,892 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-26 19:23:08,924 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 19:23:09,473 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-26 19:23:09,483 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 19:23:09,494 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 19:23:09,500 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 19:23:18,838 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 19:23:19,165 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-26 19:23:19,165 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 19:23:19,170 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 19:23:19,179 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 20:07:17,011 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 20:07:17,404 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-26 20:07:17,405 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 20:07:17,405 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 20:07:17,422 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 20:07:23,581 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-26 20:07:23,885 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-26 20:07:23,886 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
+2023-06-26 20:07:23,902 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-26 20:07:23,926 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-28 14:06:29,273 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench start
+2023-06-28 14:06:29,649 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench serve --port 8000
+2023-06-28 14:06:29,658 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench schedule
+2023-06-28 14:06:29,663 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench watch
+2023-06-28 14:06:29,677 INFO /Library/Frameworks/Python.framework/Versions/3.11/bin/bench worker
