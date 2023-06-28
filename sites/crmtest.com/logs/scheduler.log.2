@@ -1,0 +1,1360 @@
+2023-06-26 20:12:24,796 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 20:13:24,841 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 20:14:24,931 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 20:15:25,000 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 20:16:25,078 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 20:17:25,159 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 20:18:25,240 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 21:02:45,092 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 22:40:36,828 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 23:07:22,327 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 02:09:35,001 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 02:36:56,457 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 04:35:30,913 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 06:31:50,540 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 08:40:21,496 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 09:14:45,465 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 11:48:45,575 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 14:19:54,022 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 16:45:39,862 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 19:13:10,275 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-27 21:40:16,111 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 00:27:48,711 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 02:57:34,473 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 05:38:53,971 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 08:26:44,320 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 10:57:54,004 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 11:21:02,072 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:07:30,483 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:08:30,718 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:09:30,835 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:10:30,922 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:11:30,959 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:12:31,028 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:13:31,097 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:14:31,191 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:15:31,255 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:16:31,319 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:17:31,410 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:18:31,495 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-28 14:19:31,533 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found

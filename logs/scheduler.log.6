@@ -1,0 +1,746 @@
+2023-06-26 12:15:15,764 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:16:15,778 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:17:15,826 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:18:16,099 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:18:16,105 ERROR scheduler Skipped queueing erpnext.bulk_transaction.doctype.bulk_transaction_log.bulk_transaction_log.retry_failing_transaction because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,106 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,106 ERROR scheduler Skipped queueing erpnext.accounts.doctype.subscription.subscription.process_all because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,107 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_demand_loans because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,108 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,108 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,109 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_term_loans because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,110 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_security_shortfall.process_loan_security_shortfall.create_process_loan_security_shortfall because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,110 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,111 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,111 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,112 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,113 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,113 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,114 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,115 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,115 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,116 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,116 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,117 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,117 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,118 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,119 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,119 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,120 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,121 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,121 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,122 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,122 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,123 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,123 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,124 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,124 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,125 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,126 ERROR scheduler Skipped queueing erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,126 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,127 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,127 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,128 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,128 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,129 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,129 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,129 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_monthly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,130 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,130 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,130 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,131 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,131 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,131 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,132 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,132 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,132 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,133 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,133 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,133 ERROR scheduler Skipped queueing frappe.email.doctype.unhandled_email.unhandled_email.remove_old_unhandled_emails because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,133 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,134 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,134 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,134 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,135 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,135 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,135 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,136 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,136 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,136 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,137 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,137 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,137 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,137 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,138 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,138 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,138 ERROR scheduler Skipped queueing frappe.utils.error.collect_error_snapshots because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,139 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,139 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,139 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,139 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,140 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,140 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,140 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,141 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,141 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,141 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,142 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for crmtesting.com
+2023-06-26 12:18:16,142 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,148 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:19:16,155 ERROR scheduler Skipped queueing erpnext.bulk_transaction.doctype.bulk_transaction_log.bulk_transaction_log.retry_failing_transaction because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,155 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,156 ERROR scheduler Skipped queueing erpnext.accounts.doctype.subscription.subscription.process_all because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,157 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_demand_loans because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,157 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,158 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,159 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_term_loans because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,159 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_security_shortfall.process_loan_security_shortfall.create_process_loan_security_shortfall because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,160 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,160 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,161 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,162 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,162 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,163 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,163 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,164 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,165 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,165 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,166 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,166 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,167 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,167 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,168 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,169 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,169 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,170 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,170 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,171 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,171 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,172 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,172 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,173 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,174 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,174 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,175 ERROR scheduler Skipped queueing erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,175 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,176 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,176 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,177 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,177 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,178 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,178 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,179 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_monthly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,179 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,179 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,180 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,180 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,180 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,181 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,181 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,181 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,181 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,182 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,182 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,182 ERROR scheduler Skipped queueing frappe.email.doctype.unhandled_email.unhandled_email.remove_old_unhandled_emails because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,183 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,183 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,183 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,184 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,184 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,184 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,185 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,185 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,185 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,185 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,186 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,186 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,186 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,187 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,187 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,187 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,187 ERROR scheduler Skipped queueing frappe.utils.error.collect_error_snapshots because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,188 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,188 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,188 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,189 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,189 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,189 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,190 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,190 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,190 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,191 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,191 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for crmtesting.com
+2023-06-26 12:19:16,191 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,203 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:20:16,216 ERROR scheduler Skipped queueing erpnext.bulk_transaction.doctype.bulk_transaction_log.bulk_transaction_log.retry_failing_transaction because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,217 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,218 ERROR scheduler Skipped queueing erpnext.accounts.doctype.subscription.subscription.process_all because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,219 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_demand_loans because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,220 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,221 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,222 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_term_loans because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,223 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_security_shortfall.process_loan_security_shortfall.create_process_loan_security_shortfall because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,224 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,225 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,225 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,226 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,227 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,228 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,229 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,229 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,230 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,231 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,232 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,232 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,233 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,234 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,235 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,235 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,236 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,237 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,237 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,238 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,239 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,240 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,240 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,241 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,242 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,242 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,243 ERROR scheduler Skipped queueing erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,244 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,245 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,245 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,246 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,247 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,247 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,248 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,249 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_monthly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,249 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,250 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,250 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,251 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,252 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,252 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,253 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,253 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,254 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,255 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,255 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,256 ERROR scheduler Skipped queueing frappe.email.doctype.unhandled_email.unhandled_email.remove_old_unhandled_emails because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,256 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,257 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,257 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,258 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,258 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,259 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,259 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,260 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,260 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,261 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,261 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,262 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,262 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,263 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,263 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,264 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,264 ERROR scheduler Skipped queueing frappe.utils.error.collect_error_snapshots because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,265 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,265 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,266 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,266 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,267 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,267 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,268 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,268 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,269 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,269 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,270 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for crmtesting.com
+2023-06-26 12:20:16,270 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,288 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:21:16,307 ERROR scheduler Skipped queueing erpnext.bulk_transaction.doctype.bulk_transaction_log.bulk_transaction_log.retry_failing_transaction because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,308 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,309 ERROR scheduler Skipped queueing erpnext.accounts.doctype.subscription.subscription.process_all because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,311 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_demand_loans because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,312 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,312 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,313 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_term_loans because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,314 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_security_shortfall.process_loan_security_shortfall.create_process_loan_security_shortfall because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,316 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,317 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,319 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,320 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,321 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,322 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,323 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,324 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,325 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,326 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,327 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,328 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,329 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,330 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,331 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,332 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,333 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,334 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,335 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,336 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,336 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,337 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,338 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,339 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,340 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,341 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,342 ERROR scheduler Skipped queueing erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,343 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,343 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,344 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,345 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,346 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,347 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,347 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,348 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_monthly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,349 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,350 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,351 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,351 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,352 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,353 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,354 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,354 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,355 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,356 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,357 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,357 ERROR scheduler Skipped queueing frappe.email.doctype.unhandled_email.unhandled_email.remove_old_unhandled_emails because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,358 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,359 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,359 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,360 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,361 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,361 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,362 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,363 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,363 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,364 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,365 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,366 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,366 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,367 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,368 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,368 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,369 ERROR scheduler Skipped queueing frappe.utils.error.collect_error_snapshots because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,370 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,370 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,371 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,371 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,372 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,373 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,374 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,375 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,376 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,376 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,377 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for crmtesting.com
+2023-06-26 12:21:16,377 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,390 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:22:16,406 ERROR scheduler Skipped queueing erpnext.bulk_transaction.doctype.bulk_transaction_log.bulk_transaction_log.retry_failing_transaction because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,407 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,409 ERROR scheduler Skipped queueing erpnext.accounts.doctype.subscription.subscription.process_all because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,410 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_demand_loans because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,411 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,412 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,413 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_term_loans because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,414 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_security_shortfall.process_loan_security_shortfall.create_process_loan_security_shortfall because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,415 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,417 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,418 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,419 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,419 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,420 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,421 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,422 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,423 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,424 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,425 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,426 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,427 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,428 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,428 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,429 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,430 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,431 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,432 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,432 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,433 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,434 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,435 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,435 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,436 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,437 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,438 ERROR scheduler Skipped queueing erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,439 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,439 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,440 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,441 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,442 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,442 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,443 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,444 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_monthly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,445 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_monthly because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,445 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,446 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,447 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,447 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,448 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,449 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,450 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,450 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,451 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,452 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,452 ERROR scheduler Skipped queueing frappe.email.doctype.unhandled_email.unhandled_email.remove_old_unhandled_emails because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,453 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,453 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,454 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,455 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,455 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,456 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,457 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,457 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,458 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,459 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,459 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,460 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,460 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,461 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,462 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,462 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,463 ERROR scheduler Skipped queueing frappe.utils.error.collect_error_snapshots because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,463 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,464 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,464 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,465 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,466 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,466 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,467 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,467 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,468 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,469 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,469 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for crmtesting.com
+2023-06-26 12:22:16,470 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,489 ERROR scheduler Exception in Enqueue Events for Site crmtest.com
+Traceback (most recent call last):
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 68, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 105, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/utils/scheduler.py", line 118, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/database/database.py", line 790, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 1241, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 115, in __init__
+    super().__init__("DocType", doctype)
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 107, in __init__
+    self.load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/meta.py", line 121, in load_from_db
+    super().load_from_db()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/model/document.py", line 159, in load_from_db
+    frappe.throw(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 522, in throw
+    msgprint(
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 490, in msgprint
+    _raise_exception()
+  File "/Users/jayboricha/Desktop/CRM_DEMO_WITH_FRAPPE/crm/apps/frappe/frappe/__init__.py", line 439, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2023-06-26 12:23:16,507 ERROR scheduler Skipped queueing erpnext.bulk_transaction.doctype.bulk_transaction_log.bulk_transaction_log.retry_failing_transaction because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,509 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,510 ERROR scheduler Skipped queueing erpnext.accounts.doctype.subscription.subscription.process_all because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,511 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_demand_loans because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,512 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,513 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,514 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual.process_loan_interest_accrual_for_term_loans because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,515 ERROR scheduler Skipped queueing erpnext.loan_management.doctype.process_loan_security_shortfall.process_loan_security_shortfall.create_process_loan_security_shortfall because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,516 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,518 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,520 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,521 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,522 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,523 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,524 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,525 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,526 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,527 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,528 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for crmtesting.com
+2023-06-26 12:23:16,529 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for crmtesting.com
